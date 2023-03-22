@@ -1,11 +1,11 @@
 ---
 - name: add user
-  hosts: all
+  hosts: student1-win1
   gather_facts: false
   
   tasks:
-    - name: add user GA
+    - name: crear usuario para enfemeros
       win_user:
-        name: jesusjimenez
+        name: hospitalimss
         password: "123abc."
         state: present
